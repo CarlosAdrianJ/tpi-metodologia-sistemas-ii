@@ -1,0 +1,19 @@
+[
+    {
+        "numero": 1,
+        "estudiante": {
+            "legajo": "1001",
+            "nombre": "Jorge Gomez",
+            "email": "jg@hotmail.com"
+        },
+        "tipo": "certificado de alumno regular",
+        "descripcion": "solicita un certificado para presentar en su trabajo",
+        "prioridad": "Media",
+        "estado": "En proceso",
+        "responsable": {
+            "nombre": "Mariana Lopez",
+            "area": "Departamento de Alumnos"
+        },
+        "fecha_creacion": "04/09/2026 16:05"
+    }
+]
