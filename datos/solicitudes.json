@@ -15,5 +15,22 @@
             "area": "Departamento de Alumnos"
         },
         "fecha_creacion": "04/09/2026 16:05"
+    },
+    {
+        "numero": 2,
+        "estudiante": {
+            "legajo": "1002",
+            "nombre": "Ana Martinez",
+            "email": "ana.martinez@gmail.com"
+        },
+        "tipo": "solicitud de equivalencia",
+        "descripcion": "solicita la evaluación de una materia aprobada",
+        "prioridad": "Baja",
+        "estado": "Pendiente",
+        "responsable": {
+            "nombre": "Laura Perez",
+            "area": "Secretaría Académica"
+        },
+        "fecha_creacion": "05/09/2026 14:41"
     }
 ]
