@@ -32,5 +32,22 @@
             "area": "Secretaría Académica"
         },
         "fecha_creacion": "05/09/2026 14:41"
+    },
+    {
+        "numero": 3,
+        "estudiante": {
+            "legajo": "1003",
+            "nombre": "Lucia Fernandez",
+            "email": "lucia@gmail.com"
+        },
+        "tipo": "reclamo de calificación",
+        "descripcion": "solicita la revisión de una calificación",
+        "prioridad": "Alta",
+        "estado": "En proceso",
+        "responsable": {
+            "nombre": "Pablo Ramirez",
+            "area": "Secretaría Academica"
+        },
+        "fecha_creacion": "10/09/2026 19:23"
     }
 ]
