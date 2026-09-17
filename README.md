@@ -26,9 +26,22 @@ El proyecto consiste en un sistema de consola que permite registrar y administra
 - Git
 - GitHub
 
+## Requisitos
+
+Python 3.10 o superior. No requiere instalar dependencias externas.
+
 ## Ejecución
 
-Desde la carpeta principal del proyecto:
+Desde la carpeta principal:
 
-```bash
-python src/main.py
+```powershell
+python -m src.main
+```
+
+## Pruebas
+
+```powershell
+python -m unittest discover -s tests -v
+```
+
+Las pruebas utilizan archivos temporales y no modifican los datos del sistema.
