@@ -11,7 +11,10 @@ from src.modelos import (
     PrioridadSolicitud,
     Responsable,
 )
-from src.repositorio import RepositorioSolicitudesJSON
+from src.repositorio import (
+    ErrorRepositorio,
+    RepositorioSolicitudesJSON,
+)
 from src.servicio import ServicioSolicitudes
 
 
@@ -303,7 +306,24 @@ class TestSolicitudes(unittest.TestCase):
             len(self.servicio.obtener_solicitudes()),
             1,
         )
-
+    def test_json_invalido_genera_error_controlado(self):
+           self.ruta.parent.mkdir(
+               parents=True,
+               exist_ok=True,
+           )
+   
+           self.ruta.write_text(
+               "{ contenido inválido",
+               encoding="utf-8",
+           )
+   
+           with self.assertRaisesRegex(
+               ErrorRepositorio,
+               "JSON inválido",
+           ):
+               self.repositorio.obtener_todas()
 
 if __name__ == "__main__":
     unittest.main()
+
+  
